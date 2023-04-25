@@ -92,7 +92,7 @@ export default function DetailModal() {
           >
             <Box
               sx={{
-                top: -60,
+                top: -65,
                 width: "100%",
                 position: "relative",
                 height: "calc(9 / 16 * 100%)",
@@ -124,15 +124,15 @@ export default function DetailModal() {
                 sx={{
                   backgroundColor: "transparent",
                   backgroundImage:
-                    "linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#141414 68%,#141414)",
+                    "linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#181818 68%,#181818)",
                   backgroundRepeat: "repeat-x",
                   backgroundPosition: "0px top",
                   backgroundSize: "100% 100%",
-                  bottom: 0,
+                  bottom: -30,
                   position: "absolute",
-                  height: "14.7vw",
+                  height: "15.7vw",
                   opacity: 1,
-                  top: "auto",
+                  // top: "auto",
                   width: "100%",
                 }}
               />
@@ -165,7 +165,7 @@ export default function DetailModal() {
                   px: { xs: 2, sm: 3, md: 5 },
                 }}
               >
-                <MaxLineTypography variant="h4" maxLine={1} sx={{ mb: 2 }}>
+                <MaxLineTypography variant="h3" maxLine={1} sx={{ mb: 2 }}>
                   <b>{detail?.title}</b>
                 </MaxLineTypography>
                 <Stack direction="row" spacing={2} sx={{ mb: 3 }}>

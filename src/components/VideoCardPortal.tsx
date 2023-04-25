@@ -67,6 +67,22 @@ export default function VideoCardModal({
             backgroundPosition: "50%",
           }}
         />
+        <Box
+          sx={{
+            backgroundColor: "transparent",
+            backgroundImage:
+              "linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#202020 68%,#202020)",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "0px top",
+            backgroundSize: "100% 100%",
+            bottom: -30,
+            position: "absolute",
+            height: "10.7vw",
+            opacity: 1,
+            // top: "auto",
+            width: "100%",
+          }}
+        />
         <Stack
           direction="row"
           alignItems="center"

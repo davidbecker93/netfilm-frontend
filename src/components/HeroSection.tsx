@@ -127,7 +127,7 @@ export default function TopTrailer({ mediaType }: TopTrailerProps) {
                     top: 0,
                     left: 0,
                     bottom: 0,
-                    right: "26.09%",
+                    right: "50.09%",
                     opacity: 1,
                     position: "absolute",
                     transition: "opacity .5s",
