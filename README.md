@@ -1,9 +1,10 @@
 <div align="center">
   <a href="https://netfilm.onrender.com">
-    <img src="./public/assets/netfilm-logo.png" alt="Logo">
+    <img src="./public/assets/netfilm-logo.png" alt="Logo" width="70%">
   </a>
 
   <h3 align="center">Netfilm - Watching movies is always free</h3>
+</div>
 
 ## Hi every one
 This page is a movie web application that displays all trending or high-rated movies and series in detail and has the ability to search for all movies. This page is fully responsive and has the ability to change the theme. React router dam bend is used.
