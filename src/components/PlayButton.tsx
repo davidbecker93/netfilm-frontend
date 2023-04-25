@@ -27,6 +27,7 @@ export default function PlayButton({ sx, ...others }: ButtonProps) {
         whiteSpace: "nowrap",
         textTransform: "capitalize",
         bgcolor: "#ffffffb3",
+        "&:hover": { bgcolor: "#ffffff" },
         ...sx,
       }}
     >
