@@ -9,7 +9,7 @@ import Stack from "@mui/material/Stack";
 import CustomNavigation from "./CustomNavigation";
 import VideoItemWithHover from "src/components/VideoItemWithHover";
 import { ARROW_MAX_WIDTH } from "src/constant";
-import NetflixNavigationLink from "src/components/NetflixNavigationLink";
+import NetflixNavigationLink from "src/components/NetfilmNavigationLink";
 import MotionContainer from "src/components/animate/MotionContainer";
 import { varFadeIn } from "src/components/animate/variants/fade/FadeIn";
 import { CustomGenre, Genre } from "src/types/Genre";

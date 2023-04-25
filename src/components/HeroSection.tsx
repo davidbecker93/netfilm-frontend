@@ -7,7 +7,7 @@ import { getRandomNumber } from "src/utils/common";
 import MaxLineTypography from "./MaxLineTypography";
 import PlayButton from "./PlayButton";
 import MoreInfoButton from "./MoreInfoButton";
-import NetflixIconButton from "./NetflixIconButton";
+import NetfilmIconButton from "./NetfilmIconButton";
 import MaturityRate from "./MaturityRate";
 import useOffSetTop from "src/hooks/useOffSetTop";
 import { useDetailModal } from "src/providers/DetailModalProvider";
@@ -159,13 +159,13 @@ export default function TopTrailer({ mediaType }: TopTrailerProps) {
                     bottom: "35%",
                   }}
                 >
-                  <NetflixIconButton
+                  <NetfilmIconButton
                     size="large"
                     onClick={() => handleMute(muted)}
                     sx={{ zIndex: 2 }}
                   >
                     {!muted ? <VolumeUpIcon /> : <VolumeOffIcon />}
-                  </NetflixIconButton>
+                  </NetfilmIconButton>
                   <MaturityRate>{`${maturityRate}+`}</MaturityRate>
                 </Stack>
               </Box>

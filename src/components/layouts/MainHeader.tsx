@@ -14,7 +14,7 @@ import useOffSetTop from "src/hooks/useOffSetTop";
 import { APP_BAR_HEIGHT } from "src/constant";
 import Logo from "../Logo";
 import SearchBox from "../SearchBox";
-import NetflixNavigationLink from "../NetflixNavigationLink";
+import NetfilmNavigationLink from "../NetfilmNavigationLink";
 
 const pages = ["My List", "Movies", "Tv Shows"];
 
@@ -111,7 +111,7 @@ const MainHeader = () => {
             textDecoration: "none",
           }}
         >
-          Netflix
+          Netfilm
         </Typography>
         <Stack
           direction="row"
@@ -119,14 +119,14 @@ const MainHeader = () => {
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
         >
           {pages.map((page) => (
-            <NetflixNavigationLink
+            <NetfilmNavigationLink
               to=""
               variant="subtitle1"
               key={page}
               onClick={handleCloseNavMenu}
             >
               {page}
-            </NetflixNavigationLink>
+            </NetfilmNavigationLink>
           ))}
         </Stack>
 

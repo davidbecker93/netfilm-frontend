@@ -21,7 +21,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
-  "& .NetflixInputBase-input": {
+  "& .NetfilmInputBase-input": {
     width: 0,
     transition: theme.transitions.create("width", {
       duration: theme.transitions.duration.complex,

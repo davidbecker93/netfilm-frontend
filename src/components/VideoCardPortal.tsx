@@ -13,7 +13,7 @@ import { Movie } from "src/types/Movie";
 import { usePortal } from "src/providers/PortalProvider";
 import { useDetailModal } from "src/providers/DetailModalProvider";
 import { formatMinuteToReadable, getRandomNumber } from "src/utils/common";
-import NetflixIconButton from "./NetflixIconButton";
+import NetfilmIconButton from "./NetfilmIconButton";
 import MaxLineTypography from "./MaxLineTypography";
 import AgeLimitChip from "./AgeLimitChip";
 import QualityChip from "./QualityChip";
@@ -87,9 +87,9 @@ export default function VideoCardModal({
             {video.title}
           </MaxLineTypography>
           <Box flexGrow={1} />
-          <NetflixIconButton size="large">
+          <NetfilmIconButton size="large">
             <VolumeUpIcon />
-          </NetflixIconButton>
+          </NetfilmIconButton>
         </Stack>
       </Box>
       <CardContent>
@@ -108,21 +108,21 @@ export default function VideoCardModal({
             >
               <PlayCircleIcon />
             </IconButton>
-            <NetflixIconButton size="large">
+            <NetfilmIconButton size="large">
               <AddIcon />
-            </NetflixIconButton>
-            <NetflixIconButton size="large">
+            </NetfilmIconButton>
+            <NetfilmIconButton size="large">
               <ThumbUpOffAltIcon />
-            </NetflixIconButton>
+            </NetfilmIconButton>
             <Box flexGrow={1} />
-            <NetflixIconButton
+            <NetfilmIconButton
               size="large"
               onClick={() => {
                 setDetailType({ mediaType: MEDIA_TYPE.Movie, id: video.id });
               }}
             >
               <ExpandMoreIcon />
-            </NetflixIconButton>
+            </NetfilmIconButton>
           </Stack>
           <Stack direction="row" spacing={1} alignItems="center">
             <Typography
