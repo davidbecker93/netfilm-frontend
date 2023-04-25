@@ -1,4 +1,4 @@
-import { forwardRef, useCallback, useRef, useState } from "react";
+import React, { forwardRef, useCallback, useRef, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -78,6 +78,9 @@ export default function DetailModal() {
         scroll="body"
         maxWidth="md"
         open={!!detail}
+        onClose={() => {
+          setDetailType({ mediaType: MEDIA_TYPE.Movie, id: null });
+        }}
         TransitionComponent={Transition}
       >
         <DialogContent sx={{ p: 0, bgcolor: "#181818" }}>
@@ -161,7 +164,7 @@ export default function DetailModal() {
                   position: "absolute",
                   left: 0,
                   right: 0,
-                  bottom: 16,
+                  bottom: -65,
                   px: { xs: 2, sm: 3, md: 5 },
                 }}
               >
@@ -235,11 +238,11 @@ export default function DetailModal() {
             {similarVideos && similarVideos.results.length > 0 && (
               <Container
                 sx={{
-                  py: 0,
+                  py: 4,
                   px: { xs: 2, sm: 3, md: 5 },
                 }}
               >
-                <Typography variant="h6" sx={{ mb: 2 }}>
+                <Typography variant="h5" sx={{ mb: 2, fontWeight: 600 }}>
                   More Like This
                 </Typography>
                 <Grid container spacing={2}>

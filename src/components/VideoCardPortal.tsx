@@ -48,6 +48,9 @@ export default function VideoCardModal({
         // height: rect.height * 2.5,
         height: "100%",
       }}
+      onClick={() => {
+        setDetailType({ mediaType: MEDIA_TYPE.Movie, id: video.id });
+      }}
     >
       <Box
         sx={{
@@ -75,7 +78,7 @@ export default function VideoCardModal({
             backgroundRepeat: "repeat-x",
             backgroundPosition: "0px top",
             backgroundSize: "100% 100%",
-            bottom: -30,
+            bottom: -10,
             position: "absolute",
             height: "10.7vw",
             opacity: 1,

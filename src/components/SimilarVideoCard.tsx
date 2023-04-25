@@ -40,6 +40,22 @@ export default function SimilarVideoCard({ video }: SimilarVideoCardProps) {
         />
         <Box
           sx={{
+            backgroundColor: "transparent",
+            backgroundImage:
+              "linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#202020 68%,#202020)",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "0px top",
+            backgroundSize: "100% 100%",
+            bottom: 0,
+            position: "absolute",
+            height: "4vw",
+            opacity: 1,
+            // top: "auto",
+            width: "100%",
+          }}
+        />
+        <Box
+          sx={{
             position: "absolute",
             top: 10,
             right: 15,
@@ -61,14 +77,14 @@ export default function SimilarVideoCard({ video }: SimilarVideoCardProps) {
         >
           <MaxLineTypography
             maxLine={1}
-            sx={{ width: "80%", fontWeight: 700 }}
+            sx={{ width: "90%", fontWeight: 700 }}
             variant="subtitle1"
           >
             {video.title}
           </MaxLineTypography>
         </Box>
       </Box>
-      <CardContent>
+      <CardContent sx={{ pt: 0 }}>
         <Stack spacing={1}>
           <Stack direction="row" alignItems="center">
             <Box>
@@ -89,7 +105,7 @@ export default function SimilarVideoCard({ video }: SimilarVideoCardProps) {
             </NetfilmIconButton>
           </Stack>
           <Box>
-            <MaxLineTypography maxLine={4} variant="subtitle2">
+            <MaxLineTypography maxLine={3} sx={{ fontWeight: 200 }} variant="subtitle2">
               {video.overview}
             </MaxLineTypography>
           </Box>
